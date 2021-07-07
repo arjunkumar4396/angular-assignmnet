@@ -1,0 +1,18 @@
+<!-- <ul> -->
+<ng-container *ngFor="let list of productList | searchPipe:{title:searchKeys}">
+
+  <li class="product-item">
+    <span>
+      <img class="fruit-image" [src]="list?.image" alt="" srcset="" />
+    </span>
+    <span class="product-list-detail">
+      <h1>{{list?.title}}</h1>
+      <h2>{{list?.description}}</h2>
+    </span>
+    <span style="width:50px;font-size: 14px;">${{list?.price}}</span>
+    <span>
+      <button class="add_to_cart" (click)="addItem(list)">Add to Cart</button>
+    </span>
+  </li>
+</ng-container>
+<!-- <ul> -->

@@ -1,0 +1,45 @@
+.product-item {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+}
+
+.product-item:first-child {
+  border-top: 1px solid lightgray;
+}
+
+.product-item span {
+  border-right: 1px solid lightgray;
+  padding: 1rem;
+}
+
+.product-item span:first-child {
+  border-left: 1px solid lightgray;
+}
+
+.product-list-detail {
+  flex: 1;
+}
+
+.product-list-detail h1 {
+  font-size: 1.2rem;
+  color: rgb(8, 95, 255);
+  cursor: pointer;
+}
+
+.product-list-detail h2 {
+  font-size: 0.8rem;
+}
+
+.fruit-image {
+  width: 50px;
+  height: 50px;
+}
+
+
+.add_to_cart {
+  background: #83D082;
+  border: 1px solid;
+  border-radius: 6px;
+  height: 28px;
+  cursor: pointer;
+}
